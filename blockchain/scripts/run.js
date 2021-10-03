@@ -7,9 +7,6 @@ const main = async () => {
   // Calling the function to mint NFT
   let txn = await shinChanNFTContract.makeShinChanNFT();
   await txn.wait(); // waiting to be mined
-
-  txn = await shinChanNFTContract.makeShinChanNFT();
-  await txn.wait(); // waiting to be mined
 }
 
 const runMain = async () => {
